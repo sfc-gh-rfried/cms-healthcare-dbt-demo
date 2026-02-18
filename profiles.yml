@@ -1,0 +1,21 @@
+cms_demo:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: SYSADMIN
+      database: DBT_CMS_DEMO
+      warehouse: XSMALL_WH
+      schema: DEV
+      threads: 4
+    prod:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: SYSADMIN
+      database: DBT_CMS_DEMO
+      warehouse: XSMALL_WH
+      schema: PROD
+      threads: 4

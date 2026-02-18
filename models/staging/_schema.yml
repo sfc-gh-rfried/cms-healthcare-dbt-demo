@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: stg_cms__patients
+    description: "Staged patient demographics with standardized fields"
+    columns:
+      - name: patient_id
+        description: "Unique patient identifier"
+        data_tests:
+          - unique
+          - not_null
+      - name: birth_date
+        data_tests:
+          - not_null
+      - name: gender
+        data_tests:
+          - accepted_values:
+              values: ['M', 'F']
+
+  - name: stg_cms__providers
+    description: "Staged healthcare provider data"
+    columns:
+      - name: provider_id
+        description: "Unique provider identifier"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_cms__claims
+    description: "Staged insurance claims"
+    columns:
+      - name: claim_id
+        description: "Unique claim identifier"
+        data_tests:
+          - unique
+          - not_null
+      - name: patient_id
+        data_tests:
+          - not_null

@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: dim_cms__patients
+    description: "Patient dimension with derived utilization metrics"
+    columns:
+      - name: patient_key
+        description: "Surrogate key"
+        data_tests:
+          - unique
+          - not_null
+      - name: patient_id
+        data_tests:
+          - unique
+          - not_null
+      - name: utilization_tier
+        data_tests:
+          - accepted_values:
+              values: ['Low', 'Medium', 'High', 'Very High']
+
+  - name: dim_cms__providers
+    description: "Provider dimension with volume metrics"
+    columns:
+      - name: provider_key
+        description: "Surrogate key"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: fct_cms__claims
+    description: "Claims fact table with incremental loading"
+    columns:
+      - name: claim_key
+        description: "Surrogate key"
+        data_tests:
+          - unique
+          - not_null
+      - name: patient_id
+        data_tests:
+          - not_null
+      - name: diagnosis_count
+        data_tests:
+          - not_null

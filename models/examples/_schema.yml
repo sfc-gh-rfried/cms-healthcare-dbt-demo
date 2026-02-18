@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: example_dbt_utils
+    description: "Demo of dbt_utils package - surrogate keys and star macro"
+    columns:
+      - name: claim_patient_key
+        data_tests:
+          - unique
+          - not_null
+
+  - name: example_dbt_date
+    description: "Demo of dbt_date package - date dimension generator"
+    columns:
+      - name: date_day
+        data_tests:
+          - unique
+          - not_null

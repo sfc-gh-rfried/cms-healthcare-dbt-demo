@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: medicare
+    database: SYNTHETIC_HEALTHCARE_DATA__CLINICAL_AND_CLAIMS
+    schema: SILVER
+    description: "CMS Synthetic Healthcare Data from Snowflake Marketplace"
+    tables:
+      - name: PATIENTS
+        description: "Patient demographics"
+        columns:
+          - name: PATIENT_ID
+            description: "Unique patient identifier"
+            data_tests:
+              - unique
+              - not_null
+      - name: PROVIDERS
+        description: "Healthcare providers"
+        columns:
+          - name: PROVIDER_ID
+            description: "Unique provider identifier"
+            data_tests:
+              - unique
+              - not_null
+      - name: CLAIMS
+        description: "Insurance claims"
+        columns:
+          - name: CLAIM_ID
+            description: "Unique claim identifier"
+            data_tests:
+              - unique
+              - not_null

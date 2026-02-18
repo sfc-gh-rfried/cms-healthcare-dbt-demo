@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: example_dbt_expectations
+    description: "Demo of dbt_expectations package - data quality tests"
+    columns:
+      - name: claim_id
+        data_tests:
+          - not_null
+      - name: outstanding_amount_1
+        data_tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 1000000
+              row_condition: "outstanding_amount_1 IS NOT NULL"

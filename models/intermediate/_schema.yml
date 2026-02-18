@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: int_cms__claims_summary
+    description: "Aggregated claims data per patient"
+    columns:
+      - name: patient_claims_key
+        description: "Surrogate key for patient claims summary"
+        data_tests:
+          - unique
+          - not_null
+      - name: patient_id
+        data_tests:
+          - unique
+          - not_null
+      - name: total_claims
+        data_tests:
+          - not_null
