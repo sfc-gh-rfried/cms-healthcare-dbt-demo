@@ -15,52 +15,49 @@
 
 ---
 
-## How It Works
+## How dbt Projects Fits in Snowflake
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                        DEVELOPMENT FLOW                              │
-├─────────────────────────────────────────────────────────────────────┤
-│                                                                      │
-│   Local IDE / VS Code          Snowsight Workspace                  │
-│         │                              │                             │
-│         │    ┌──────────────┐          │                             │
-│         └───►│   GitHub     │◄─────────┘                             │
-│              │   Repository │                                        │
-│              └──────┬───────┘                                        │
-│                     │                                                │
-│                     ▼                                                │
-│              ┌──────────────┐                                        │
-│              │ Git Repository│  (Snowflake Object)                   │
-│              │    Object     │                                        │
-│              └──────┬───────┘                                        │
-│                     │                                                │
-│                     ▼                                                │
-│              ┌──────────────┐                                        │
-│              │ DBT PROJECT  │  CREATE DBT PROJECT ... FROM @repo     │
-│              │    Object    │                                        │
-│              └──────┬───────┘                                        │
-│                     │                                                │
-│                     ▼                                                │
-│              ┌──────────────┐                                        │
-│              │   EXECUTE    │  EXECUTE DBT PROJECT args='run'        │
-│              │  DBT PROJECT │                                        │
-│              └──────┬───────┘                                        │
-│                     │                                                │
-│                     ▼                                                │
-│              ┌──────────────┐                                        │
-│              │ Tables/Views │  Materialized in target schemas        │
-│              └──────────────┘                                        │
-│                                                                      │
-└─────────────────────────────────────────────────────────────────────┘
-```
+dbt Projects lives inside **Snowsight Workspaces**—Snowflake's browser-based development environment. Think of it as having a complete data transformation IDE right where your data lives.
 
-### Key Components
+### The Experience
 
-1. **Snowsight Workspace** - Browser-based IDE for editing dbt files
-2. **Git Repository Object** - Syncs with GitHub/GitLab for version control
-3. **DBT PROJECT Object** - Deployed, versioned dbt project in Snowflake
-4. **EXECUTE DBT PROJECT** - Runs dbt commands (run, test, build, etc.)
+**1. Workspaces: Your Development Home**
+
+Navigate to **Projects → Workspaces** in Snowsight. Here you can:
+- Create folders and organize SQL files
+- Connect to GitHub for version control
+- Edit dbt models with syntax highlighting
+- Run transformations with one click
+
+**2. Build: Write SQL, Let dbt Handle the Rest**
+
+You write simple SELECT statements. dbt handles:
+- Dependencies between models (what runs first?)
+- Incremental loading (only process new data)
+- Testing (does the data look right?)
+- Documentation (what does this column mean?)
+
+**3. Deploy: From Development to Production**
+
+When ready, deploy your project:
+- Click **Connect → Deploy dbt project**
+- Choose your target database and schema
+- Your transformations become a managed Snowflake object
+
+**4. Schedule: Automate Everything**
+
+Once deployed:
+- Click **Create Schedule** to set up automated runs
+- Runs execute on your existing warehouse—no extra cost
+- Monitor execution history directly in Snowsight
+
+### Where You'll Work
+
+| Snowsight Location | What You Do There |
+|--------------------|-------------------|
+| **Projects → Workspaces** | Write and test dbt models |
+| **Data → Databases** | See your deployed DBT PROJECT objects |
+| **Monitoring → Query History** | View execution logs and performance |
 
 ---
 
