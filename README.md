@@ -24,14 +24,24 @@ snow dbt deploy cms_healthcare_demo \
   --source . \
   --database DBT_CMS_DEMO \
   --schema DBT_PROJECTS \
+  --dbt-version 1.12.3 \
   -c YOUR_CONNECTION
 ```
 
 ### Execute
 ```sql
-EXECUTE DBT PROJECT "DBT_CMS_DEMO"."DBT_PROJECTS"."CMS_HEALTHCARE_DEMO" 
-  args='run --target dev';
+-- env.yml defines dev (per-user schemas, default) and prod
+EXECUTE DBT PROJECT "DBT_CMS_DEMO"."DBT_PROJECTS"."CMS_HEALTHCARE_DEMO"
+  ENVIRONMENT = 'dev' ARGS = 'build';
+
+EXECUTE DBT PROJECT "DBT_CMS_DEMO"."DBT_PROJECTS"."CMS_HEALTHCARE_DEMO"
+  ENVIRONMENT = 'dev' ARGS = 'source freshness';  -- CLAIMS reports STALE: the Marketplace data is a static snapshot
 ```
+
+### Versions (2026 refresh)
+- dbt Core 1.12.3 (pinned). Verified: `build` PASS=47.
+- Packages: dbt_utils 1.4.1, metaplane/dbt_expectations 0.10.10, godatadriven/dbt_date 0.21.0 (see `package-lock.yml`).
+- Generic test arguments are nested under `arguments:`. Parses with no deprecation warnings.
 
 ## Models
 
