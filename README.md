@@ -1,20 +1,30 @@
 # CMS Healthcare dbt Demo
 
-A demonstration dbt project for Snowflake's **dbt Projects on Snowflake** feature, using synthetic healthcare data from the Snowflake Marketplace.
+A demonstration dbt project for Snowflake's **dbt Projects on Snowflake** feature. It is fully self-contained: small synthetic seed data, no dbt packages, and no network access, so it runs in locked-down accounts.
 
 ## Features
 
+- **Seeds**: Synthetic patients, providers, claims, and conditions (`scripts/gen_seeds.py`)
 - **Staging Models**: Clean and standardize raw healthcare data
-- **Intermediate Models**: Business logic and aggregations  
-- **Mart Models**: Dimensional models for analytics
-- **Package Examples**: Demonstrations of dbt_utils, dbt_date, dbt_expectations
+- **Intermediate Models**: Business logic and aggregations
+- **Mart Models**: Dimensional models for analytics, including an incremental fact table
+- **Source freshness** on the seeded tables (table metadata, no timestamp column needed)
+- **Optional Cortex model** (`fct_chronic_conditions`, AI_FILTER), off by default
 
-## Data Source
+## Data
 
-Uses `SYNTHETIC_HEALTHCARE_DATA__CLINICAL_AND_CLAIMS.SILVER` from Snowflake Marketplace:
-- 124M claims
-- 1.4M patients
-- 4K providers
+| Seed | Rows | Notes |
+|------|------|-------|
+| raw_patients | 200 | No identity fields (SSN, license, passport) |
+| raw_providers | 25 | |
+| raw_claims | 1,000 | Service dates in the 90 days before generation |
+| raw_conditions | 300 | Text descriptions for the Cortex example |
+
+All values are generated from a fixed random seed; nothing is copied from real or Marketplace data. Regenerate with current dates:
+
+```bash
+python3 scripts/gen_seeds.py              # or --as-of YYYY-MM-DD for reproducible output
+```
 
 ## Quick Start
 
@@ -27,26 +37,30 @@ snow dbt deploy cms_healthcare_demo \
   --dbt-version 1.12.3 \
   -c YOUR_CONNECTION
 ```
+No external access integration is needed: the project has no `packages.yml`.
 
 ### Execute
 ```sql
--- env.yml defines dev (per-user schemas, default) and prod
+-- env.yml: dev (per-user schemas, default), prod, single_schema (everything in one pre-created schema)
 EXECUTE DBT PROJECT "DBT_CMS_DEMO"."DBT_PROJECTS"."CMS_HEALTHCARE_DEMO"
-  ENVIRONMENT = 'dev' ARGS = 'build';
+  ENVIRONMENT = 'dev' ARGS = 'build';               -- build runs seeds first
 
 EXECUTE DBT PROJECT "DBT_CMS_DEMO"."DBT_PROJECTS"."CMS_HEALTHCARE_DEMO"
-  ENVIRONMENT = 'dev' ARGS = 'source freshness';  -- CLAIMS reports STALE: the Marketplace data is a static snapshot
+  ENVIRONMENT = 'dev' ARGS = 'source freshness';    -- Fresh right after seeding
+
+EXECUTE DBT PROJECT "DBT_CMS_DEMO"."DBT_PROJECTS"."CMS_HEALTHCARE_DEMO"
+  ENVIRONMENT = 'dev' ARGS = 'build --vars ''{enable_cortex_demo: true}''';  -- optional AI_FILTER model
 ```
 
-### Versions (2026 refresh)
-- dbt Core 1.12.3 (pinned). Verified: `build` PASS=47.
-- Packages: dbt_utils 1.4.1, metaplane/dbt_expectations 0.10.10, godatadriven/dbt_date 0.21.0 (see `package-lock.yml`).
+### Versions
+- dbt Core 1.12.3 (pinned). No dbt packages.
 - Generic test arguments are nested under `arguments:`. Parses with no deprecation warnings.
 
 ## Models
 
 | Layer | Model | Type |
 |-------|-------|------|
+| Seeds | raw_patients, raw_providers, raw_claims, raw_conditions | table |
 | Staging | stg_cms__claims | view |
 | Staging | stg_cms__patients | view |
 | Staging | stg_cms__providers | view |
@@ -54,6 +68,4 @@ EXECUTE DBT PROJECT "DBT_CMS_DEMO"."DBT_PROJECTS"."CMS_HEALTHCARE_DEMO"
 | Marts | dim_cms__patients | table |
 | Marts | dim_cms__providers | table |
 | Marts | fct_cms__claims | incremental |
-| Examples | example_dbt_utils | view |
-| Examples | example_dbt_date | table |
-| Examples | example_dbt_expectations | view |
+| Marts (optional) | fct_chronic_conditions | table, AI_FILTER |

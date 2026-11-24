@@ -1,3 +1,0 @@
-# dbt-date
-
-@AGENTS.md

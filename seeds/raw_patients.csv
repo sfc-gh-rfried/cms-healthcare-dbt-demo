@@ -1,0 +1,201 @@
+PATIENT_ID,BIRTHDATE,DEATHDATE,FIRST,LAST,GENDER,RACE,ETHNICITY,CITY,STATE,COUNTY,ZIP,HEALTHCARE_EXPENSES,HEALTHCARE_COVERAGE
+P00001,2000-08-01,,Ben,Keane,M,other,nonhispanic,Riverton,MD,Howard,21044,443195.33,65918.77
+P00002,1978-02-01,,Hana,Brook,M,other,hispanic,Fairview,TX,Collin,75069,848540.85,255692.16
+P00003,2018-11-07,2022-05-19,Lena,Jones,F,white,hispanic,Lakeside,OH,Erie,44870,478216.0,331677.49
+P00004,1980-05-14,,Kai,Dunn,F,other,nonhispanic,Riverton,MD,Howard,21044,245894.6,322260.41
+P00005,1985-03-25,,Jo,Adler,M,white,nonhispanic,Riverton,MD,Howard,21044,467688.83,187271.34
+P00006,1982-12-22,,Nia,Dunn,F,black,hispanic,Fairview,TX,Collin,75069,115568.63,332846.4
+P00007,1997-07-19,,Cara,Gray,M,other,nonhispanic,Fairview,TX,Collin,75069,352941.1,44617.1
+P00008,1983-04-28,,Nia,Jones,M,white,nonhispanic,Springfield,MA,Hampden,01103,197328.15,146180.89
+P00009,2000-03-13,,Omar,Keane,F,white,nonhispanic,Riverton,MD,Howard,21044,762691.66,154670.62
+P00010,1997-01-03,,Cara,Adler,M,black,nonhispanic,Hillcrest,CA,San Diego,92103,219274.75,304236.42
+P00011,1986-01-19,,Gus,Adler,F,white,hispanic,Hillcrest,CA,San Diego,92103,306703.2,114487.99
+P00012,1974-12-31,,Max,Dunn,M,native,nonhispanic,Fairview,TX,Collin,75069,189568.05,358282.44
+P00013,1941-11-30,,Ava,Keane,F,asian,nonhispanic,Lakeside,OH,Erie,44870,594541.81,8424.7
+P00014,1996-06-25,,Hana,Dunn,F,black,hispanic,Riverton,MD,Howard,21044,571470.5,229879.85
+P00015,1996-07-05,,Nia,Hale,F,other,nonhispanic,Springfield,MA,Hampden,01103,194967.0,354100.34
+P00016,1967-03-23,,Ivan,Dunn,M,other,hispanic,Springfield,MA,Hampden,01103,292783.28,277357.46
+P00017,1941-06-09,,Hana,Gray,M,native,hispanic,Riverton,MD,Howard,21044,613383.7,214143.83
+P00018,1991-10-19,,Nia,Irwin,M,black,hispanic,Hillcrest,CA,San Diego,92103,749614.35,399390.49
+P00019,2018-06-15,,Fay,Lowe,F,asian,nonhispanic,Riverton,MD,Howard,21044,478702.35,328807.85
+P00020,1999-12-16,,Jo,Dunn,M,native,nonhispanic,Hillcrest,CA,San Diego,92103,293671.89,192807.39
+P00021,1970-08-15,,Ben,Irwin,F,white,nonhispanic,Riverton,MD,Howard,21044,181736.59,255195.76
+P00022,1943-09-06,,Lena,Ellis,F,asian,hispanic,Hillcrest,CA,San Diego,92103,257002.83,148324.5
+P00023,1978-04-23,,Fay,Gray,M,asian,nonhispanic,Springfield,MA,Hampden,01103,245626.15,151325.17
+P00024,1940-08-28,,Ivan,Irwin,M,native,hispanic,Lakeside,OH,Erie,44870,554874.86,16374.9
+P00025,1980-10-01,,Omar,Ellis,M,black,nonhispanic,Hillcrest,CA,San Diego,92103,141130.51,353134.61
+P00026,2001-12-06,,Max,Jones,F,native,hispanic,Hillcrest,CA,San Diego,92103,193610.9,142793.28
+P00027,1977-07-23,,Nia,Cole,M,other,hispanic,Riverton,MD,Howard,21044,342473.12,291351.42
+P00028,1962-09-12,,Eli,Cole,F,black,nonhispanic,Fairview,TX,Collin,75069,293985.51,61410.75
+P00029,1990-08-11,,Jo,Frost,F,asian,nonhispanic,Fairview,TX,Collin,75069,260665.93,307448.75
+P00030,2006-06-11,,Hana,Jones,F,native,hispanic,Springfield,MA,Hampden,01103,250343.42,108367.65
+P00031,1974-02-26,,Cara,Frost,F,other,nonhispanic,Lakeside,OH,Erie,44870,383940.44,335302.14
+P00032,2005-08-30,,Jo,Cole,F,black,hispanic,Riverton,MD,Howard,21044,728954.62,227436.39
+P00033,2016-06-25,2025-03-11,Fay,Adler,M,other,nonhispanic,Springfield,MA,Hampden,01103,138150.13,286829.58
+P00034,1946-01-13,,Pia,Gray,F,white,nonhispanic,Lakeside,OH,Erie,44870,227895.31,121862.44
+P00035,1990-02-23,,Max,Cole,M,white,nonhispanic,Hillcrest,CA,San Diego,92103,317530.12,4593.02
+P00036,1985-12-31,,Ben,Keane,F,native,nonhispanic,Fairview,TX,Collin,75069,465405.32,39212.23
+P00037,1958-03-16,,Ben,Ellis,F,white,nonhispanic,Springfield,MA,Hampden,01103,788436.26,30193.73
+P00038,1992-09-05,,Hana,Adler,M,white,nonhispanic,Riverton,MD,Howard,21044,875764.55,381448.18
+P00039,1965-11-17,,Ava,Dunn,F,native,nonhispanic,Hillcrest,CA,San Diego,92103,241960.95,29000.48
+P00040,1947-03-15,,Eli,Ellis,M,asian,nonhispanic,Hillcrest,CA,San Diego,92103,566932.89,19026.78
+P00041,1980-06-28,,Lena,Keane,M,black,hispanic,Riverton,MD,Howard,21044,548676.1,267096.27
+P00042,1949-02-08,,Lena,Gray,F,asian,hispanic,Lakeside,OH,Erie,44870,76909.1,366851.85
+P00043,1988-11-29,,Omar,Jones,M,asian,hispanic,Fairview,TX,Collin,75069,728933.68,30556.05
+P00044,1995-01-09,,Omar,Irwin,F,black,hispanic,Hillcrest,CA,San Diego,92103,482320.4,140618.48
+P00045,2019-01-15,,Ben,Brook,F,black,hispanic,Riverton,MD,Howard,21044,30717.68,115305.12
+P00046,1946-01-31,,Hana,Gray,M,other,hispanic,Riverton,MD,Howard,21044,128851.67,32120.99
+P00047,1970-12-02,,Pia,Gray,M,white,hispanic,Fairview,TX,Collin,75069,496959.64,80385.85
+P00048,1947-01-07,,Lena,Cole,M,white,nonhispanic,Fairview,TX,Collin,75069,126960.13,105526.24
+P00049,1966-09-08,,Pia,Keane,F,other,hispanic,Springfield,MA,Hampden,01103,805705.95,223332.35
+P00050,1951-04-02,,Ben,Hale,F,other,nonhispanic,Riverton,MD,Howard,21044,162913.7,86822.66
+P00051,1990-02-05,2024-12-16,Lena,Adler,F,white,nonhispanic,Fairview,TX,Collin,75069,829974.99,257776.59
+P00052,2012-03-07,,Eli,Dunn,M,asian,hispanic,Springfield,MA,Hampden,01103,468289.59,376922.99
+P00053,1960-04-02,,Max,Irwin,F,white,nonhispanic,Riverton,MD,Howard,21044,147547.73,194009.13
+P00054,1963-09-01,,Cara,Irwin,F,other,nonhispanic,Springfield,MA,Hampden,01103,858841.99,46904.83
+P00055,2011-04-29,,Dev,Irwin,F,white,nonhispanic,Fairview,TX,Collin,75069,232318.92,156642.02
+P00056,2000-08-05,,Kai,Frost,M,native,hispanic,Riverton,MD,Howard,21044,589421.58,145927.86
+P00057,2000-08-25,,Max,Gray,M,other,nonhispanic,Hillcrest,CA,San Diego,92103,360093.36,351724.13
+P00058,2019-05-21,,Jo,Brook,M,white,nonhispanic,Springfield,MA,Hampden,01103,263198.73,40394.64
+P00059,1957-10-20,,Eli,Brook,F,other,nonhispanic,Fairview,TX,Collin,75069,737268.74,370627.29
+P00060,1962-09-03,,Pia,Hale,M,asian,nonhispanic,Fairview,TX,Collin,75069,856569.05,85563.95
+P00061,2006-12-17,,Ben,Dunn,M,asian,nonhispanic,Hillcrest,CA,San Diego,92103,678498.38,264810.76
+P00062,1989-04-17,,Jo,Lowe,M,black,nonhispanic,Springfield,MA,Hampden,01103,575732.71,167599.52
+P00063,1969-05-26,,Jo,Brook,M,white,hispanic,Lakeside,OH,Erie,44870,677097.8,267737.59
+P00064,1972-03-20,,Cara,Ellis,M,white,nonhispanic,Fairview,TX,Collin,75069,501829.22,371483.97
+P00065,2003-12-16,,Pia,Hale,F,asian,nonhispanic,Lakeside,OH,Erie,44870,365995.89,360832.47
+P00066,1952-03-18,,Ben,Hale,M,asian,hispanic,Fairview,TX,Collin,75069,699815.71,339606.66
+P00067,1960-07-20,,Max,Irwin,F,native,hispanic,Fairview,TX,Collin,75069,841895.15,79087.33
+P00068,1997-04-19,,Max,Hale,M,white,hispanic,Springfield,MA,Hampden,01103,893131.32,78752.06
+P00069,1982-06-27,,Fay,Jones,M,white,nonhispanic,Lakeside,OH,Erie,44870,578605.79,260095.47
+P00070,1984-08-04,,Omar,Cole,F,native,hispanic,Lakeside,OH,Erie,44870,694450.98,355767.63
+P00071,1994-08-06,,Jo,Lowe,M,white,hispanic,Springfield,MA,Hampden,01103,760565.45,52024.2
+P00072,1970-07-25,,Pia,Ellis,M,other,nonhispanic,Springfield,MA,Hampden,01103,298416.8,189864.59
+P00073,1962-07-05,,Ben,Brook,M,other,hispanic,Springfield,MA,Hampden,01103,436290.06,187827.66
+P00074,2017-03-19,,Max,Jones,F,black,nonhispanic,Riverton,MD,Howard,21044,683419.46,97858.4
+P00075,1941-06-12,,Ava,Dunn,M,asian,hispanic,Fairview,TX,Collin,75069,844943.12,390600.79
+P00076,1999-11-15,,Dev,Dunn,M,native,nonhispanic,Hillcrest,CA,San Diego,92103,778893.42,31668.28
+P00077,2018-02-10,,Kai,Lowe,F,black,nonhispanic,Springfield,MA,Hampden,01103,244353.6,1577.92
+P00078,1985-10-26,,Jo,Brook,M,black,nonhispanic,Springfield,MA,Hampden,01103,497058.75,256205.83
+P00079,1979-12-29,,Omar,Brook,M,asian,hispanic,Hillcrest,CA,San Diego,92103,45448.23,262462.13
+P00080,1991-09-10,2025-09-10,Cara,Frost,F,black,nonhispanic,Riverton,MD,Howard,21044,808130.88,41719.37
+P00081,1975-04-24,,Kai,Irwin,M,black,hispanic,Springfield,MA,Hampden,01103,456713.98,297758.83
+P00082,1944-07-04,,Dev,Hale,M,native,nonhispanic,Springfield,MA,Hampden,01103,567432.51,268721.12
+P00083,2017-05-15,,Fay,Adler,M,native,hispanic,Springfield,MA,Hampden,01103,389390.45,102595.19
+P00084,1989-04-02,,Ava,Irwin,F,other,hispanic,Riverton,MD,Howard,21044,242596.84,310236.09
+P00085,1973-03-25,,Ivan,Brook,F,white,nonhispanic,Riverton,MD,Howard,21044,758337.15,383150.12
+P00086,1956-07-20,,Fay,Gray,M,black,hispanic,Fairview,TX,Collin,75069,380263.16,184218.87
+P00087,1969-09-07,,Kai,Brook,M,asian,nonhispanic,Hillcrest,CA,San Diego,92103,803394.7,336736.84
+P00088,1965-10-23,,Nia,Jones,F,asian,nonhispanic,Hillcrest,CA,San Diego,92103,158410.09,222073.58
+P00089,1958-09-07,,Ben,Hale,F,other,hispanic,Lakeside,OH,Erie,44870,746617.74,285429.63
+P00090,1959-10-19,,Gus,Irwin,F,asian,nonhispanic,Springfield,MA,Hampden,01103,481151.04,300066.87
+P00091,1963-06-05,,Jo,Dunn,M,white,hispanic,Hillcrest,CA,San Diego,92103,158065.2,199476.3
+P00092,1974-12-13,,Lena,Ellis,M,asian,nonhispanic,Hillcrest,CA,San Diego,92103,433659.59,366786.61
+P00093,1958-12-10,,Ivan,Keane,M,black,hispanic,Lakeside,OH,Erie,44870,331534.01,272898.83
+P00094,1991-03-20,,Omar,Dunn,M,asian,nonhispanic,Springfield,MA,Hampden,01103,876048.57,250967.52
+P00095,1987-03-02,,Omar,Frost,F,white,nonhispanic,Lakeside,OH,Erie,44870,236066.53,151073.42
+P00096,1966-10-14,,Pia,Keane,M,native,hispanic,Hillcrest,CA,San Diego,92103,491464.55,143606.71
+P00097,1942-09-25,,Ivan,Adler,M,white,hispanic,Springfield,MA,Hampden,01103,49539.76,89778.74
+P00098,1962-08-22,,Kai,Adler,M,black,nonhispanic,Lakeside,OH,Erie,44870,311631.29,204355.47
+P00099,1992-05-08,,Ivan,Hale,F,white,nonhispanic,Hillcrest,CA,San Diego,92103,377543.77,290422.31
+P00100,2008-10-21,,Kai,Gray,M,other,nonhispanic,Springfield,MA,Hampden,01103,210577.26,31737.63
+P00101,1952-06-25,,Pia,Frost,M,other,nonhispanic,Fairview,TX,Collin,75069,579434.83,390642.33
+P00102,1971-05-15,,Jo,Frost,M,other,nonhispanic,Springfield,MA,Hampden,01103,308213.8,271105.29
+P00103,1988-08-05,,Ivan,Jones,M,asian,nonhispanic,Lakeside,OH,Erie,44870,94411.17,392853.42
+P00104,1946-04-17,,Gus,Hale,F,other,hispanic,Fairview,TX,Collin,75069,873702.83,144562.37
+P00105,1941-10-13,,Jo,Frost,M,white,hispanic,Hillcrest,CA,San Diego,92103,504815.99,134392.45
+P00106,1957-05-06,,Gus,Dunn,F,native,nonhispanic,Springfield,MA,Hampden,01103,703143.98,191180.56
+P00107,2008-06-27,,Kai,Irwin,F,white,nonhispanic,Springfield,MA,Hampden,01103,520797.05,341785.07
+P00108,2005-12-04,,Nia,Frost,M,white,nonhispanic,Riverton,MD,Howard,21044,475863.45,214295.58
+P00109,2014-11-01,,Gus,Irwin,F,black,hispanic,Fairview,TX,Collin,75069,311470.27,397588.17
+P00110,2010-05-25,,Kai,Keane,F,white,hispanic,Lakeside,OH,Erie,44870,762161.07,93095.7
+P00111,1958-12-15,,Max,Gray,F,black,nonhispanic,Riverton,MD,Howard,21044,825932.48,370509.25
+P00112,1965-11-17,,Omar,Dunn,F,asian,hispanic,Lakeside,OH,Erie,44870,43287.99,395868.16
+P00113,1942-01-13,,Ivan,Cole,M,native,nonhispanic,Hillcrest,CA,San Diego,92103,165608.72,370275.78
+P00114,1993-11-27,,Max,Lowe,F,other,nonhispanic,Fairview,TX,Collin,75069,431529.02,231505.24
+P00115,1992-10-27,,Lena,Keane,M,asian,nonhispanic,Springfield,MA,Hampden,01103,71053.0,328089.9
+P00116,2019-08-06,,Kai,Frost,F,white,hispanic,Fairview,TX,Collin,75069,702988.11,189227.48
+P00117,1942-10-09,,Eli,Adler,F,black,hispanic,Springfield,MA,Hampden,01103,373293.16,235732.93
+P00118,2009-01-22,,Kai,Brook,F,black,nonhispanic,Springfield,MA,Hampden,01103,531617.8,259547.21
+P00119,2008-09-19,,Max,Hale,F,black,nonhispanic,Fairview,TX,Collin,75069,792581.02,234596.17
+P00120,1995-06-10,,Ava,Irwin,F,white,nonhispanic,Riverton,MD,Howard,21044,167050.35,111548.42
+P00121,2008-07-29,,Pia,Lowe,F,native,hispanic,Springfield,MA,Hampden,01103,817570.79,254332.32
+P00122,2000-11-28,,Eli,Cole,M,native,nonhispanic,Lakeside,OH,Erie,44870,577893.78,55370.2
+P00123,1968-04-15,,Cara,Gray,F,asian,hispanic,Springfield,MA,Hampden,01103,785276.95,360478.85
+P00124,1974-09-04,,Omar,Hale,M,native,nonhispanic,Springfield,MA,Hampden,01103,59839.7,177971.04
+P00125,1992-01-31,,Dev,Cole,M,native,hispanic,Lakeside,OH,Erie,44870,780305.56,87596.63
+P00126,1994-01-05,,Hana,Ellis,F,black,hispanic,Riverton,MD,Howard,21044,397597.6,284084.23
+P00127,1992-08-29,,Eli,Keane,M,other,nonhispanic,Springfield,MA,Hampden,01103,591114.04,303016.9
+P00128,1997-12-12,,Omar,Jones,F,asian,hispanic,Springfield,MA,Hampden,01103,574043.39,107782.55
+P00129,1962-08-05,,Dev,Gray,M,asian,hispanic,Riverton,MD,Howard,21044,663689.48,8389.12
+P00130,1974-11-21,,Kai,Brook,F,black,nonhispanic,Hillcrest,CA,San Diego,92103,577011.65,83192.31
+P00131,2019-12-06,,Gus,Irwin,F,black,hispanic,Riverton,MD,Howard,21044,677412.19,19806.2
+P00132,1997-03-21,,Pia,Jones,F,white,nonhispanic,Riverton,MD,Howard,21044,798823.51,207943.62
+P00133,1985-02-04,,Dev,Jones,F,asian,hispanic,Hillcrest,CA,San Diego,92103,816620.68,246655.81
+P00134,1997-02-20,,Omar,Frost,F,native,nonhispanic,Lakeside,OH,Erie,44870,235417.32,48869.77
+P00135,1986-03-29,,Nia,Cole,F,other,nonhispanic,Springfield,MA,Hampden,01103,260001.71,201416.22
+P00136,2013-04-22,,Dev,Keane,F,native,hispanic,Springfield,MA,Hampden,01103,726900.33,89395.87
+P00137,2008-03-05,,Ivan,Cole,M,black,hispanic,Riverton,MD,Howard,21044,79220.9,177628.28
+P00138,2009-04-29,,Eli,Frost,M,asian,hispanic,Fairview,TX,Collin,75069,63734.32,291618.98
+P00139,1980-05-16,,Max,Brook,F,black,hispanic,Springfield,MA,Hampden,01103,836383.16,158637.01
+P00140,1978-11-12,,Jo,Irwin,F,black,nonhispanic,Lakeside,OH,Erie,44870,387775.79,354486.03
+P00141,1951-11-25,,Ivan,Brook,M,native,hispanic,Fairview,TX,Collin,75069,363979.21,83490.26
+P00142,2011-10-23,2024-10-06,Dev,Frost,M,other,hispanic,Lakeside,OH,Erie,44870,709328.94,259600.28
+P00143,1972-06-23,,Jo,Gray,F,native,hispanic,Fairview,TX,Collin,75069,817060.49,43978.95
+P00144,1945-10-15,,Pia,Dunn,M,asian,hispanic,Lakeside,OH,Erie,44870,31059.29,104555.86
+P00145,1944-11-18,,Cara,Ellis,F,white,nonhispanic,Riverton,MD,Howard,21044,885731.44,96294.91
+P00146,1944-12-19,,Dev,Irwin,M,asian,hispanic,Fairview,TX,Collin,75069,140739.02,223007.87
+P00147,1990-07-02,,Lena,Jones,M,black,hispanic,Hillcrest,CA,San Diego,92103,764839.0,197634.82
+P00148,2019-03-04,,Omar,Irwin,F,black,nonhispanic,Fairview,TX,Collin,75069,596336.41,92240.9
+P00149,2013-01-14,,Jo,Brook,F,asian,nonhispanic,Fairview,TX,Collin,75069,32070.09,314911.5
+P00150,2010-10-10,2024-11-20,Nia,Hale,M,white,hispanic,Riverton,MD,Howard,21044,642788.61,21063.62
+P00151,1986-02-23,,Gus,Adler,M,white,hispanic,Hillcrest,CA,San Diego,92103,61999.97,45164.15
+P00152,1964-12-14,,Max,Jones,M,black,hispanic,Springfield,MA,Hampden,01103,219625.66,253573.44
+P00153,1941-02-04,,Ben,Adler,M,white,hispanic,Hillcrest,CA,San Diego,92103,609688.35,253483.07
+P00154,2011-11-19,,Cara,Hale,F,asian,hispanic,Springfield,MA,Hampden,01103,528443.31,315520.86
+P00155,1948-09-08,,Nia,Dunn,F,asian,nonhispanic,Lakeside,OH,Erie,44870,724959.85,390551.43
+P00156,1961-10-19,,Fay,Irwin,M,asian,hispanic,Hillcrest,CA,San Diego,92103,476941.64,160444.34
+P00157,1961-07-19,,Ava,Hale,F,other,hispanic,Riverton,MD,Howard,21044,177584.44,392033.07
+P00158,2012-12-12,,Kai,Adler,F,other,hispanic,Riverton,MD,Howard,21044,595137.35,109143.7
+P00159,1967-03-30,,Max,Dunn,F,asian,hispanic,Hillcrest,CA,San Diego,92103,607329.4,89803.64
+P00160,2004-10-31,2025-05-21,Nia,Jones,F,white,nonhispanic,Fairview,TX,Collin,75069,268452.47,164083.91
+P00161,2008-04-30,2022-06-18,Jo,Lowe,F,black,hispanic,Hillcrest,CA,San Diego,92103,470609.81,370989.04
+P00162,1942-07-10,,Lena,Brook,F,black,nonhispanic,Lakeside,OH,Erie,44870,206731.69,18218.3
+P00163,1958-11-30,2024-06-30,Hana,Hale,M,native,nonhispanic,Fairview,TX,Collin,75069,816837.48,137358.36
+P00164,1987-10-19,,Ben,Frost,M,other,nonhispanic,Hillcrest,CA,San Diego,92103,885946.04,76209.47
+P00165,1954-08-13,,Ava,Keane,F,native,hispanic,Fairview,TX,Collin,75069,28284.9,390531.89
+P00166,2014-11-22,,Jo,Ellis,M,native,hispanic,Springfield,MA,Hampden,01103,880349.32,186896.02
+P00167,1961-11-06,,Jo,Frost,M,native,nonhispanic,Lakeside,OH,Erie,44870,823556.44,173631.88
+P00168,1961-06-01,,Dev,Gray,M,black,hispanic,Hillcrest,CA,San Diego,92103,86810.81,176804.39
+P00169,1979-06-02,,Max,Dunn,F,native,hispanic,Springfield,MA,Hampden,01103,634506.16,373446.47
+P00170,2011-03-02,,Omar,Lowe,F,black,nonhispanic,Hillcrest,CA,San Diego,92103,783440.56,214761.9
+P00171,1946-08-28,,Eli,Keane,F,asian,hispanic,Springfield,MA,Hampden,01103,702311.62,303648.68
+P00172,1963-05-17,,Hana,Keane,F,asian,nonhispanic,Hillcrest,CA,San Diego,92103,630214.72,4015.19
+P00173,1975-06-25,,Lena,Irwin,M,other,nonhispanic,Riverton,MD,Howard,21044,576830.74,302321.21
+P00174,1972-04-06,,Lena,Adler,F,asian,hispanic,Fairview,TX,Collin,75069,174721.88,160240.04
+P00175,1951-01-29,,Hana,Frost,M,asian,nonhispanic,Hillcrest,CA,San Diego,92103,27591.08,217855.6
+P00176,1955-06-29,,Max,Frost,M,native,hispanic,Lakeside,OH,Erie,44870,319025.66,167591.37
+P00177,2019-03-21,,Dev,Frost,M,asian,hispanic,Lakeside,OH,Erie,44870,872299.23,334393.69
+P00178,1997-01-31,,Nia,Keane,F,white,hispanic,Springfield,MA,Hampden,01103,295245.05,192565.85
+P00179,1942-10-25,,Ava,Frost,F,native,hispanic,Riverton,MD,Howard,21044,512543.11,162069.34
+P00180,2017-08-09,,Pia,Dunn,M,native,hispanic,Riverton,MD,Howard,21044,113216.63,91748.61
+P00181,2011-07-25,,Lena,Gray,M,black,nonhispanic,Lakeside,OH,Erie,44870,730480.29,178917.93
+P00182,1958-03-19,,Eli,Jones,F,white,hispanic,Hillcrest,CA,San Diego,92103,153458.82,262517.06
+P00183,1994-03-17,,Hana,Gray,F,white,nonhispanic,Hillcrest,CA,San Diego,92103,529550.3,6098.37
+P00184,2000-10-05,,Jo,Jones,F,native,hispanic,Springfield,MA,Hampden,01103,247908.93,335817.66
+P00185,2001-01-11,,Kai,Gray,F,asian,nonhispanic,Riverton,MD,Howard,21044,342588.13,120348.15
+P00186,1954-06-29,,Cara,Frost,M,black,nonhispanic,Riverton,MD,Howard,21044,95441.05,182386.19
+P00187,1964-11-07,,Cara,Keane,F,other,nonhispanic,Hillcrest,CA,San Diego,92103,326816.78,72179.67
+P00188,1942-01-22,,Kai,Adler,M,black,nonhispanic,Fairview,TX,Collin,75069,69785.72,325798.5
+P00189,1962-03-30,,Hana,Jones,F,other,hispanic,Fairview,TX,Collin,75069,169600.68,223826.31
+P00190,1995-02-25,,Pia,Frost,F,asian,hispanic,Lakeside,OH,Erie,44870,190468.83,110468.75
+P00191,1959-11-11,,Kai,Irwin,F,white,nonhispanic,Springfield,MA,Hampden,01103,39396.72,247755.54
+P00192,1989-03-24,,Max,Cole,F,other,nonhispanic,Lakeside,OH,Erie,44870,501815.93,393494.7
+P00193,2007-08-03,,Lena,Lowe,F,black,hispanic,Fairview,TX,Collin,75069,569624.26,292144.7
+P00194,2007-04-20,,Ivan,Lowe,F,other,nonhispanic,Lakeside,OH,Erie,44870,314648.75,70394.14
+P00195,1972-09-18,,Kai,Gray,F,other,nonhispanic,Springfield,MA,Hampden,01103,128823.46,16716.01
+P00196,1992-02-29,,Eli,Dunn,F,asian,nonhispanic,Fairview,TX,Collin,75069,666547.46,143622.92
+P00197,1947-05-07,,Ben,Jones,F,black,nonhispanic,Springfield,MA,Hampden,01103,128023.37,227010.3
+P00198,1981-05-22,,Fay,Irwin,M,white,nonhispanic,Lakeside,OH,Erie,44870,22473.0,301555.17
+P00199,1984-11-16,,Jo,Irwin,M,black,nonhispanic,Riverton,MD,Howard,21044,198152.37,284160.91
+P00200,2014-07-21,,Nia,Jones,M,black,nonhispanic,Springfield,MA,Hampden,01103,570521.19,152990.68

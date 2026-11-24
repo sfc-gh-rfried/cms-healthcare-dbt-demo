@@ -1,37 +1,18 @@
 version: 2
 
+# The seeded tables, declared as a source only so `dbt source freshness` can be demoed.
+# No loaded_at_field: Snowflake uses table metadata (last altered), so the badge reads
+# Fresh right after `dbt seed`. Models reference the seeds with ref(), not source().
 sources:
-  - name: medicare
-    database: SYNTHETIC_HEALTHCARE_DATA__CLINICAL_AND_CLAIMS
-    schema: SILVER
-    description: "CMS Synthetic Healthcare Data from Snowflake Marketplace"
+  - name: demo_raw
+    database: "{{ target.database }}"
+    schema: "{{ target.schema }}"
+    description: "Synthetic seed tables (see seeds/_seeds.yml)"
+    config:
+      freshness:
+        warn_after: {count: 1, period: day}
+        error_after: {count: 7, period: day}
     tables:
-      - name: PATIENTS
-        description: "Patient demographics"
-        columns:
-          - name: PATIENT_ID
-            description: "Unique patient identifier"
-            data_tests:
-              - unique
-              - not_null
-      - name: PROVIDERS
-        description: "Healthcare providers"
-        columns:
-          - name: PROVIDER_ID
-            description: "Unique provider identifier"
-            data_tests:
-              - unique
-              - not_null
-      - name: CLAIMS
-        description: "Insurance claims. Marketplace snapshot, so freshness is expected to report Stale."
-        config:
-          loaded_at_field: SERVICEDATE
-          freshness:
-            warn_after: {count: 1, period: day}
-            error_after: {count: 30, period: day}
-        columns:
-          - name: CLAIM_ID
-            description: "Unique claim identifier"
-            data_tests:
-              - unique
-              - not_null
+      - name: raw_claims
+      - name: raw_patients
+      - name: raw_providers

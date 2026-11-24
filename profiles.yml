@@ -5,17 +5,17 @@ cms_demo:
       type: snowflake
       account: 'not needed'
       user: 'not needed'
-      role: SYSADMIN
+      role: "{{ env_var('DBT_CMS_ROLE', 'SYSADMIN') }}"
       database: "{{ env_var('DBT_CMS_DB', 'DBT_CMS_DEMO') }}"
-      warehouse: XSMALL_WH
+      warehouse: "{{ env_var('DBT_CMS_WH', 'XSMALL_WH') }}"
       schema: "{{ env_var('DBT_CMS_SCHEMA', 'DEV') }}"
       threads: 4
     prod:
       type: snowflake
       account: 'not needed'
       user: 'not needed'
-      role: SYSADMIN
+      role: "{{ env_var('DBT_CMS_ROLE', 'SYSADMIN') }}"
       database: "{{ env_var('DBT_CMS_DB', 'DBT_CMS_DEMO') }}"
-      warehouse: XSMALL_WH
+      warehouse: "{{ env_var('DBT_CMS_WH', 'XSMALL_WH') }}"
       schema: "{{ env_var('DBT_CMS_SCHEMA', 'PROD') }}"
       threads: 4

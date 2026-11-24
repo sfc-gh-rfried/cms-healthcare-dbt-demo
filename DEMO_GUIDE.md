@@ -468,33 +468,6 @@ After running the project:
 
 ---
 
-## Package Examples
-
-The project also demonstrates popular dbt packages:
-
-### dbt_utils - Surrogate Keys
-```sql
-{{ dbt_utils.generate_surrogate_key(['claim_id', 'patient_id']) }} AS claim_patient_key
-```
-
-### dbt_date - Date Dimensions
-```sql
-{{ dbt_utils.date_spine(datepart="day", start_date="...", end_date="...") }}
-{{ dbt_date.day_of_week('date_day') }} AS day_of_week
-```
-
-### dbt_expectations - Data Quality
-```yaml
-columns:
-  - name: outstanding_amount
-    data_tests:
-      - dbt_expectations.expect_column_values_to_be_between:
-          min_value: 0
-          max_value: 1000000
-```
-
----
-
 ## Resources
 
 - **GitHub Repo**: https://github.com/sfc-gh-rfried/cms-healthcare-dbt-demo

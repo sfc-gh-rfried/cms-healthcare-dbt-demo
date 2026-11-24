@@ -21,7 +21,6 @@ Upload these files from your local project:
 cms_healthcare_demo/
 ├── dbt_project.yml
 ├── profiles.yml
-├── packages.yml
 ├── macros/
 │   └── generate_schema_name.sql
 └── models/

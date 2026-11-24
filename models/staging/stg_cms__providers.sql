@@ -1,5 +1,5 @@
 WITH source AS (
-    SELECT * FROM {{ source('medicare', 'PROVIDERS') }}
+    SELECT * FROM {{ ref('raw_providers') }}
 ),
 
 staged AS (
@@ -13,8 +13,6 @@ staged AS (
         CITY AS city,
         STATE AS state,
         ZIP AS zip_code,
-        LAT AS latitude,
-        LON AS longitude,
         ENCOUNTERS AS encounter_count,
         PROCEDURES AS procedure_count,
         CURRENT_TIMESTAMP() AS _loaded_at

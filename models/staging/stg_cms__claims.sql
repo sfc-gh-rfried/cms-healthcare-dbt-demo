@@ -1,5 +1,5 @@
 WITH source AS (
-    SELECT * FROM {{ source('medicare', 'CLAIMS') }}
+    SELECT * FROM {{ ref('raw_claims') }}
 ),
 
 staged AS (
