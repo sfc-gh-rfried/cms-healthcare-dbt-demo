@@ -6,16 +6,16 @@ cms_demo:
       account: 'not needed'
       user: 'not needed'
       role: SYSADMIN
-      database: DBT_CMS_DEMO
+      database: "{{ env_var('DBT_CMS_DB', 'DBT_CMS_DEMO') }}"
       warehouse: XSMALL_WH
-      schema: DEV
+      schema: "{{ env_var('DBT_CMS_SCHEMA', 'DEV') }}"
       threads: 4
     prod:
       type: snowflake
       account: 'not needed'
       user: 'not needed'
       role: SYSADMIN
-      database: DBT_CMS_DEMO
+      database: "{{ env_var('DBT_CMS_DB', 'DBT_CMS_DEMO') }}"
       warehouse: XSMALL_WH
-      schema: PROD
+      schema: "{{ env_var('DBT_CMS_SCHEMA', 'PROD') }}"
       threads: 4

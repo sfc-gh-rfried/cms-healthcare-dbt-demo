@@ -16,7 +16,8 @@ models:
       - name: utilization_tier
         data_tests:
           - accepted_values:
-              values: ['Low', 'Medium', 'High', 'Very High']
+              arguments:
+                values: ['Low', 'Medium', 'High', 'Very High']
 
   - name: dim_cms__providers
     description: "Provider dimension with volume metrics"

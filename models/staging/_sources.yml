@@ -23,7 +23,12 @@ sources:
               - unique
               - not_null
       - name: CLAIMS
-        description: "Insurance claims"
+        description: "Insurance claims. Marketplace snapshot, so freshness is expected to report Stale."
+        config:
+          loaded_at_field: SERVICEDATE
+          freshness:
+            warn_after: {count: 1, period: day}
+            error_after: {count: 30, period: day}
         columns:
           - name: CLAIM_ID
             description: "Unique claim identifier"
